@@ -8,6 +8,8 @@
   "react-native": "src/index",
   "source": "src/index",
   "files": [
+    "CHANGELOG.md",
+    "README.md",
     "src",
     "lib",
     "android",
@@ -28,6 +30,7 @@
     "prepare": "bob build",
     "release": "release-it",
     "example": "yarn --cwd example",
+    "example:start": "yarn --cwd example start",
     "pods": "cd example && pod-install --quiet",
     "bootstrap": "yarn example && yarn && yarn pods"
   },
@@ -49,6 +52,7 @@
   "devDependencies": {
     "@commitlint/config-conventional": "^11.0.0",
     "@react-native-community/eslint-config": "^2.0.0",
+    "@reduxjs/toolkit": "^1.7.2",
     "@release-it/conventional-changelog": "^2.0.0",
     "@types/jest": "^26.0.0",
     "@types/react": "^16.9.19",
@@ -59,17 +63,23 @@
     "eslint-plugin-prettier": "^3.1.3",
     "husky": "^4.2.5",
     "jest": "^26.0.1",
+    "node-directory-indexing": "^0.0.7",
     "pod-install": "^0.1.0",
     "prettier": "^2.0.5",
     "react": "16.13.1",
     "react-native": "0.63.4",
     "react-native-builder-bob": "^0.18.0",
+    "react-redux": "^7.2.6",
+    "redux": "^4.1.2",
     "release-it": "^14.2.2",
     "typescript": "^4.1.3"
   },
   "peerDependencies": {
+    "@reduxjs/toolkit": "^1.7.2",
     "react": "*",
-    "react-native": "*"
+    "react-native": "*",
+    "react-redux": "^7.2.6",
+    "redux": "^4.1.2"
   },
   "jest": {
     "preset": "react-native",
@@ -113,6 +123,7 @@
       "prettier"
     ],
     "rules": {
+      "@typescript-eslint/no-unused-vars": "off",
       "prettier/prettier": [
         "error",
         {

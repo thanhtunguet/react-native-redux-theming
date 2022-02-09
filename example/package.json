@@ -9,8 +9,14 @@
     "start": "react-native start"
   },
   "dependencies": {
+    "@reduxjs/toolkit": "^1.7.2",
     "react": "16.13.1",
-    "react-native": "0.63.4"
+    "react-native": "0.63.4",
+    "react-native-image-helper": "^0.0.3",
+    "react-native-toasty": "^2.0.0",
+    "react-native-vector-icons": "^9.0.0",
+    "react-redux": "^7.2.6",
+    "redux": "^4.1.2"
   },
   "devDependencies": {
     "@babel/core": "^7.12.10",
