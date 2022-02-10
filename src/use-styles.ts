@@ -5,7 +5,7 @@ import { useSelector } from 'react-redux';
 import { themeSelector } from './selectors';
 import type { ThemeSliceState, ThemeStyle } from './types';
 import { transformColors } from './transform-colors';
-import { useThemes } from 'src/use-themes';
+import { useThemes } from './use-themes';
 
 export const themes: Record<string, ThemeStyle> = {};
 
