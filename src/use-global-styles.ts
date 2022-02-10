@@ -1,4 +1,4 @@
-import { useSelector } from 'example/node_modules/@types/react-redux';
+import { useSelector } from 'react-redux';
 import { globalStylesSelector } from './selectors';
 import type { ThemeSliceState } from './types';
 
