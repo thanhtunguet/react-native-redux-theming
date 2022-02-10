@@ -18,7 +18,7 @@ export const globalStyles = {
     color: '@primaryColor',
   },
   textSecondary: {
-    color: '@successColor',
+    color: '@secondaryColor',
   },
   textSuccess: {
     color: '@successColor',
