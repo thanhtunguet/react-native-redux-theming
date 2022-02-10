@@ -9,11 +9,14 @@ export function createThemeSlice<T = {}>(
     currentTheme: 'default',
   }
 ) {
+  const { themes, currentTheme } = initialState;
+  const themeStyle = themes[currentTheme];
+
   return createSlice({
     name: 'theming',
     initialState: {
       ...initialState,
-      globalStyles,
+      globalStyles: transformColors(globalStyles, themeStyle),
     },
     reducers: {
       setThemes(
@@ -36,12 +39,9 @@ export function createThemeSlice<T = {}>(
           payload: keyof ThemingGlobalState['theming']['themes'];
         }
       ) {
-        const currentTheme = action.payload;
-        state.currentTheme = currentTheme;
-        state.globalStyles = transformColors(
-          globalStyles,
-          state.themes[currentTheme]
-        );
+        const theme = action.payload;
+        state.currentTheme = theme;
+        state.globalStyles = transformColors(globalStyles, state.themes[theme]);
       },
     },
   });

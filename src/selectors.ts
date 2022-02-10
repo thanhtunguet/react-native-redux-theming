@@ -5,3 +5,6 @@ export const themeSelector = (state: ThemingGlobalState) =>
 
 export const themesSelector = (state: ThemingGlobalState) =>
   state.theming.themes;
+
+export const globalStylesSelector = (state: ThemingGlobalState) =>
+  state.theming.globalStyles;
