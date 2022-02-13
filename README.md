@@ -2,6 +2,10 @@
 
 Theming React Native app using Redux global state
 
+## Demo
+
+Expo demo available at: [https://snack.expo.dev/@thanhtunguet/react-native-redux-theming](https://snack.expo.dev/@thanhtunguet/react-native-redux-theming)
+
 ## Installation
 
 ```sh
@@ -110,6 +114,16 @@ const { changeTheme, setThemes } = themeSlice.actions;
 ```
 
 ### useThemeValue
+
+```ts
+const primaryColor = useThemeValue('primaryColor')
+```
+
+### globalStyles
+
+```ts
+const globalStyles = useGlobalStyles();
+```
 
 ## Contributing
 

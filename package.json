@@ -1,6 +1,6 @@
 {
   "name": "react-native-redux-theming",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "description": "Theming React Native app using Redux global state",
   "main": "lib/commonjs/index",
   "module": "lib/module/index",
