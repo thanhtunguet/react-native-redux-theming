@@ -45,7 +45,7 @@ export const globalStyles = {
     backgroundColor: '@primaryColor',
   },
   bgSecondary: {
-    backgroundColor: '@successColor',
+    backgroundColor: '@secondaryColor',
   },
   bgSuccess: {
     backgroundColor: '@successColor',
