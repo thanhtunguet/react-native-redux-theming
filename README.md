@@ -9,7 +9,7 @@ Expo demo available at: [https://snack.expo.dev/@thanhtunguet/react-native-redux
 ## Installation
 
 ```sh
-yarn add react-native-redux-theming
+yarn add react-native-redux-theming @reduxjs/toolkit react-redux redux
 ```
 
 ## Usage
@@ -54,7 +54,7 @@ yarn add react-native-redux-theming
   export const store = configureStore({
     reducer: {
       theming: themeSlice.reducer,
-      // ...your others state properties
+      // ...others state slices
     },
     middleware: [
       // redux middlewares
@@ -116,7 +116,29 @@ const { changeTheme, setThemes } = themeSlice.actions;
 ### useThemeValue
 
 ```ts
-const primaryColor = useThemeValue('primaryColor')
+const primaryColor = useThemeValue('primaryColor');
+const secondaryColor = useThemeValue('secondaryColor');
+const successColor = useThemeValue('successColor');
+const dangerColor = useThemeValue('dangerColor');
+const infoColor = useThemeValue('infoColor');
+const warningColor = useThemeValue('warningColor');
+const lightColor = useThemeValue('lightColor');
+const darkColor = useThemeValue('darkColor');
+const mutedColor = useThemeValue('mutedColor');
+// ...
+```
+
+## License
+
+MIT
+
+## Contributing
+
+Please feel free to fork the project or to create pull requests.
+
+## Authors
+
+- Thanh Tung <
 ```
 
 ### globalStyles
