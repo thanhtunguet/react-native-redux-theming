@@ -128,19 +128,6 @@ const mutedColor = useThemeValue('mutedColor');
 // ...
 ```
 
-## License
-
-MIT
-
-## Contributing
-
-Please feel free to fork the project or to create pull requests.
-
-## Authors
-
-- Thanh Tung <
-```
-
 ### globalStyles
 
 ```ts
@@ -149,8 +136,7 @@ const globalStyles = useGlobalStyles();
 
 ## Contributing
 
-See the [contributing guide](CONTRIBUTING.md) to learn how to contribute to the repository and the development workflow.
-
+Please feel free to fork the project or to create pull requests.
 ## License
 
 MIT
